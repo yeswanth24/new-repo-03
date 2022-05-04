@@ -6,7 +6,7 @@ class DbPerson(db.Model):
     name=db.Column(db.String(30),index=False,unique=False,nullable=False)
     city=db.Column(db.String(30),index=False,unique=False,nullable=False)
     desig=db.Column(db.String(30),index=False,unique=False,nullable=False)
-    age=db.Column(db.Integer(30),index=False,unique=False,nullable=False)
+    age=db.Column(db.Integer,index=False,unique=False,nullable=False)
     
 
     def __init__(self,eno,name,city,desig,age):

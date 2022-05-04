@@ -3,7 +3,7 @@ from flask import jsonify,request,abort
 from models import DbPerson
 
 @app.route("/emp")
-def getDbPeople():
+def getEnp():
     listp=DbPerson.query.all()
     result = [x.serialize() for x in listp]
     return jsonify(result)
